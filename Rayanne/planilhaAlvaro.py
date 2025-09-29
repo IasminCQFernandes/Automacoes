@@ -1,7 +1,7 @@
 import pandas as pd
 import openpyxl
 import re
-import planilhaAlvaro as st
+import streamlit as st
 from datetime import datetime
 
 def atualizar_medicoes(arquivo_valores, arquivo_acompanhamento):
@@ -126,3 +126,4 @@ if arquivo_valores and arquivo_acompanhamento:
                     file_name="ACOMPANHAMENTO_MEDICOES_ATUALIZADO.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
                 )
+# python -m streamlit run planilhaAlvaro.py
